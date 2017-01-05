@@ -3,9 +3,7 @@ This is the implementation of a revenue calculator for the shopicruit task summe
 
 ## Commentaries
 
-Since the orders yielded by Shopify may have multiple currencies, besides ```revenue_usd``` method, which returns total revenue in dollars, there is also a ```revenue_by_currency``` method. The latter returns a hash of type ```ruby
-{:currency => {:total_price => price, :total_tax => tax}}
-```
+Since the orders yielded by Shopify may have multiple currencies, besides ```revenue_usd``` method, which returns total revenue in dollars, there is also a ```revenue_by_currency``` method. The latter returns a hash of type ```ruby {:currency => {:total_price => price, :total_tax => tax}}```
 
 ## Results
 Running first ```revenue_by_currency``` we see that all of the orders are in CAD and the tax is 0
